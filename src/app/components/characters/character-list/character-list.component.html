@@ -1,4 +1,4 @@
-<mat-grid-list cols="2" rowHeight="450px">
+<mat-grid-list cols="3" rowHeight="450px">
   <mat-grid-tile [colspan]="1" [rowspan]="1" *ngFor="let character of characters">
     <mat-card class="dashboard-card">
       <mat-card-header>
@@ -6,6 +6,7 @@
       </mat-card-header>
       <mat-card-content class="dashboard-card-content">
         <img src="{{character.image}}" alt="">
+        <span (click)="openDialog(character.id)">Detalle</span><br>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>
