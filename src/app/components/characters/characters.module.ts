@@ -5,10 +5,11 @@ import { CharactersRoutingModule } from './characters-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { AngularMaterialModule } from '../../modules/angular-material.module';
 import { CharacterListComponent } from './character-list/character-list.component';
+import {CharacterModalComponent} from './character-modal/character-modal.component';
 
 
 @NgModule({
-  declarations: [CharacterListComponent],
+  declarations: [CharacterListComponent, CharacterModalComponent],
   exports: [
     CharacterListComponent
   ],

@@ -16,4 +16,8 @@ export class CharactersService {
   public async all(): Promise<any> {
     return await this.http.get<any>(`${this.apiUrl}character/`).toPromise();
   }
+
+  public async show(id): Promise<any> {
+    return await this.http.get<any>(`${this.apiUrl}character/${id}`).toPromise();
+  }
 }

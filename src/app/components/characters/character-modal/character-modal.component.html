@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>{{character.name}}</h1>
+<div mat-dialog-content>
+  <img src="{{character.image}}" alt=""><br>
+  <b> Genero: <i>{{character.gender}}</i></b><br>
+  <b> Estado: <i>{{character.status}}</i></b><br>
+  <b> Espacie: <i>{{character.species}}</i></b><br>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cerrar</button>
+</div>
